@@ -80,6 +80,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sagit/proprietary/lib/libdpmnsrm.so:system/lib/libdpmnsrm.so \
     vendor/xiaomi/sagit/proprietary/lib/libdpmtcm.so:system/lib/libdpmtcm.so \
     vendor/xiaomi/sagit/proprietary/lib/libhbtpjni.so:system/lib/libhbtpjni.so \
+    vendor/xiaomi/sagit/proprietary/lib/lib-imsvideocodec.so:system/lib/lib-imsvideocodec.so \
     vendor/xiaomi/sagit/proprietary/lib/liblocationservice_jni.so:system/lib/liblocationservice_jni.so \
     vendor/xiaomi/sagit/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
     vendor/xiaomi/sagit/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
@@ -144,6 +145,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sagit/proprietary/lib64/libhbtpjni.so:system/lib64/libhbtpjni.so \
     vendor/xiaomi/sagit/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/xiaomi/sagit/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
+    vendor/xiaomi/sagit/proprietary/lib64/lib-imsvideocodec.so:system/lib64/lib-imsvideocodec.so \
     vendor/xiaomi/sagit/proprietary/lib64/liblocationservice_jni.so:system/lib64/liblocationservice_jni.so \
     vendor/xiaomi/sagit/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
     vendor/xiaomi/sagit/proprietary/lib64/libmmparser_lite.so:system/lib64/libmmparser_lite.so \
