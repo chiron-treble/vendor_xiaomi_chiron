@@ -95,6 +95,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chiron/proprietary/lib/libsensor_test.so:system/lib/libsensor_test.so \
     vendor/xiaomi/chiron/proprietary/lib/libsns_low_lat_stream_stub.so:system/lib/libsns_low_lat_stream_stub.so \
     vendor/xiaomi/chiron/proprietary/lib/libtrueportrait.so:system/lib/libtrueportrait.so \
+    vendor/xiaomi/chiron/proprietary/lib/libultrasound.so:system/lib/libultrasound.so \
     vendor/xiaomi/chiron/proprietary/lib/libvendorconn.so:system/lib/libvendorconn.so \
     vendor/xiaomi/chiron/proprietary/lib/libwfdavenhancements.so:system/lib/libwfdavenhancements.so \
     vendor/xiaomi/chiron/proprietary/lib/libwfdcodecv4l2.so:system/lib/libwfdcodecv4l2.so \
@@ -157,6 +158,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chiron/proprietary/lib64/libsensor_calJNI.so:system/lib64/libsensor_calJNI.so \
     vendor/xiaomi/chiron/proprietary/lib64/libsensor_test.so:system/lib64/libsensor_test.so \
     vendor/xiaomi/chiron/proprietary/lib64/libsns_low_lat_stream_stub.so:system/lib64/libsns_low_lat_stream_stub.so \
+    vendor/xiaomi/chiron/proprietary/lib64/libultrasound.so:system/lib64/libultrasound.so \
     vendor/xiaomi/chiron/proprietary/lib64/libvendorconn.so:system/lib64/libvendorconn.so \
     vendor/xiaomi/chiron/proprietary/lib64/libwfdavenhancements.so:system/lib64/libwfdavenhancements.so \
     vendor/xiaomi/chiron/proprietary/lib64/libwfdcodecv4l2.so:system/lib64/libwfdcodecv4l2.so \
