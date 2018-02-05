@@ -19,6 +19,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chiron/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
     vendor/xiaomi/chiron/proprietary/bin/wfdservice:system/bin/wfdservice \
     vendor/xiaomi/chiron/proprietary/etc/calib.cfg:system/etc/calib.cfg \
+    vendor/xiaomi/chiron/proprietary/etc/elliptic_sensor.xml:system/etc/elliptic_sensor.xml \
     vendor/xiaomi/chiron/proprietary/etc/cne/SwimConfig.xml:system/etc/cne/SwimConfig.xml \
     vendor/xiaomi/chiron/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
     vendor/xiaomi/chiron/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
@@ -148,6 +149,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chiron/proprietary/lib64/liblocationservice_jni.so:system/lib64/liblocationservice_jni.so \
     vendor/xiaomi/chiron/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
     vendor/xiaomi/chiron/proprietary/lib64/libmmparser_lite.so:system/lib64/libmmparser_lite.so \
+    vendor/xiaomi/chiron/proprietary/lib64/libnotifyaudiohal.so:system/lib64/libnotifyaudiohal.so \
     vendor/xiaomi/chiron/proprietary/lib64/libqminvapi.so:system/lib64/libqminvapi.so \
     vendor/xiaomi/chiron/proprietary/lib64/librcc.so:system/lib64/librcc.so \
     vendor/xiaomi/chiron/proprietary/lib64/libsd_sdk_display.so:system/lib64/libsd_sdk_display.so \
@@ -1166,6 +1168,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chiron/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:system/vendor/lib64/libxtwifi_ulp_adaptor.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib64/mediadrm/libdrmclearkeyplugin.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib64/sensor_calibrate.so:system/vendor/lib64/sensor_calibrate.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib64/sensors.elliptic.so:system/vendor/lib64/sensors.elliptic.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib64/sensors.ssc.so:system/vendor/lib64/sensors.ssc.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib64/soundfx/libqcbassboost.so:system/vendor/lib64/soundfx/libqcbassboost.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib64/soundfx/libqcreverb.so:system/vendor/lib64/soundfx/libqcreverb.so \
