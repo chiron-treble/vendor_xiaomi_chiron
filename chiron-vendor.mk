@@ -33,10 +33,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chiron/proprietary/etc/firmware/cpp_firmware_v1_5_2.fw:system/etc/firmware/cpp_firmware_v1_5_2.fw \
     vendor/xiaomi/chiron/proprietary/etc/firmware/cpp_firmware_v1_6_0.fw:system/etc/firmware/cpp_firmware_v1_6_0.fw \
     vendor/xiaomi/chiron/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
-    vendor/xiaomi/chiron/proprietary/etc/firmware/tfa98xx_aac.cnt:system/etc/firmware/tfa98xx_aac.cnt \
-    vendor/xiaomi/chiron/proprietary/etc/firmware/tfa98xx_ssi.cnt:system/etc/firmware/tfa98xx_ssi.cnt \
+    vendor/xiaomi/chiron/proprietary/etc/firmware/tas2559_uCDSP.bin:system/etc/firmware/tas2559_uCDSP.bin \
+    vendor/xiaomi/chiron/proprietary/etc/firmware/tas2559_s_uCDSP.bin:system/etc/firmware/tas2559_s_uCDSP.bin \
     vendor/xiaomi/chiron/proprietary/etc/init/wfdservice.rc:system/etc/init/wfdservice.rc \
-    vendor/xiaomi/chiron/proprietary/etc/jdi_fhd_cmd_incell_dsi_panel_ct.xml:system/etc/jdi_fhd_cmd_incell_dsi_panel_ct.xml \
+    vendor/xiaomi/chiron/proprietary/etc/jdi_fhd_video_dsi_panel_ct.xml:system/etc/jdi_fhd_video_dsi_panel_ct.xml \
     vendor/xiaomi/chiron/proprietary/etc/modem/Diag.cfg:system/etc/modem/Diag.cfg \
     vendor/xiaomi/chiron/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/xiaomi/chiron/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
@@ -52,8 +52,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chiron/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/xiaomi/chiron/proprietary/etc/permissions/radioconfig.xml:system/etc/permissions/radioconfig.xml \
     vendor/xiaomi/chiron/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
-    vendor/xiaomi/chiron/proprietary/etc/qdcm_calib_data_jdi_fhd_cmd_incell_dsi_panel.xml:system/etc/qdcm_calib_data_jdi_fhd_cmd_incell_dsi_panel.xml \
-    vendor/xiaomi/chiron/proprietary/etc/qdcm_calib_data_lgd_fhd_cmd_incell_dsi_panel.xml:system/etc/qdcm_calib_data_lgd_fhd_cmd_incell_dsi_panel.xml \
+    vendor/xiaomi/chiron/proprietary/etc/qdcm_calib_data_jdi_fhd_video_dsi_panel.xml:system/etc/qdcm_calib_data_jdi_fhd_video_dsi_panel.xml \
     vendor/xiaomi/chiron/proprietary/etc/wfdconfig.xml:system/etc/wfdconfig.xml \
     vendor/xiaomi/chiron/proprietary/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml \
     vendor/xiaomi/chiron/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
@@ -246,6 +245,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chiron/proprietary/vendor/etc/acdbdata/Forte/Forte_Headset_cal.acdb:system/vendor/etc/acdbdata/Forte/Forte_Headset_cal.acdb \
     vendor/xiaomi/chiron/proprietary/vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb:system/vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb \
     vendor/xiaomi/chiron/proprietary/vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp:system/vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp \
+    vendor/xiaomi/chiron/proprietary/vendor/etc/acdbdata/ChironS/Forte_ChironS_Bluetooth_cal.acdb:system/vendor/etc/acdbdata/ChironS/Forte_ChironS_Bluetooth_cal.acdb \
+    vendor/xiaomi/chiron/proprietary/vendor/etc/acdbdata/ChironS/Forte_ChironS_General_cal.acdb:system/vendor/etc/acdbdata/ChironS/Forte_ChironS_General_cal.acdb \
+    vendor/xiaomi/chiron/proprietary/vendor/etc/acdbdata/ChironS/Forte_ChironS_Global_cal.acdb:system/vendor/etc/acdbdata/ChironS/Forte_ChironS_Global_cal.acdb \
+    vendor/xiaomi/chiron/proprietary/vendor/etc/acdbdata/ChironS/Forte_ChironS_Handset_cal.acdb:system/vendor/etc/acdbdata/ChironS/Forte_ChironS_Handset_cal.acdb \
+    vendor/xiaomi/chiron/proprietary/vendor/etc/acdbdata/ChironS/Forte_ChironS_Hdmi_cal.acdb:system/vendor/etc/acdbdata/ChironS/Forte_ChironS_Hdmi_cal.acdb \
+    vendor/xiaomi/chiron/proprietary/vendor/etc/acdbdata/ChironS/Forte_ChironS_Headset_cal.acdb:system/vendor/etc/acdbdata/ChironS/Forte_ChironS_Headset_cal.acdb \
+    vendor/xiaomi/chiron/proprietary/vendor/etc/acdbdata/ChironS/Forte_ChironS_Speaker_cal.acdb:system/vendor/etc/acdbdata/ChironS/Forte_ChironS_Speaker_cal.acdb \
+    vendor/xiaomi/chiron/proprietary/vendor/etc/acdbdata/ChironS/Forte_ChironS_workspaceFile.qwsp:system/vendor/etc/acdbdata/ChironS/Forte_ChironS_workspaceFile.qwsp \
     vendor/xiaomi/chiron/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:system/vendor/etc/acdbdata/adsp_avs_config.acdb \
     vendor/xiaomi/chiron/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:system/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml \
     vendor/xiaomi/chiron/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml:system/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml \
@@ -380,6 +387,100 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chiron/proprietary/vendor/lib/libc2d30-a5xx.so:system/vendor/lib/libc2d30-a5xx.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/libc2d30_bltlib.so:system/vendor/lib/libc2d30_bltlib.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/libchromaflash.so:system/vendor/lib/libchromaflash.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_primax_snapshot.so:system/vendor/lib/libchromatix_chiron_ov5675_primax_snapshot.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_primax_cpp_hfr_120.so:system/vendor/lib/libchromatix_chiron_ov5675_primax_cpp_hfr_120.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_4K_preview.so:system/vendor/lib/libchromatix_chiron_imx386_semco_4K_preview.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_common.so:system/vendor/lib/libchromatix_chiron_imx386_semco_common.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_qtech_hfr_120.so:system/vendor/lib/libchromatix_chiron_ov5675_qtech_hfr_120.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_primax_video_full.so:system/vendor/lib/libchromatix_chiron_ov5675_primax_video_full.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_primax_a3_default_video.so:system/vendor/lib/libchromatix_chiron_ov5675_primax_a3_default_video.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_cpp_hfr_120.so:system/vendor/lib/libchromatix_chiron_imx386_semco_cpp_hfr_120.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_primax_common.so:system/vendor/lib/libchromatix_chiron_ov5675_primax_common.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_primax_zsl_video.so:system/vendor/lib/libchromatix_chiron_ov5675_primax_zsl_video.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_qtech_default_video.so:system/vendor/lib/libchromatix_chiron_ov5675_qtech_default_video.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_preview.so:system/vendor/lib/libchromatix_chiron_imx386_semco_preview.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_qtech_cpp_hfr_90.so:system/vendor/lib/libchromatix_chiron_ov5675_qtech_cpp_hfr_90.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libmmcamera_chiron_imx386_semco_eeprom.so:system/vendor/lib/libmmcamera_chiron_imx386_semco_eeprom.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_cpp_snapshot_hdr.so:system/vendor/lib/libchromatix_chiron_imx386_semco_cpp_snapshot_hdr.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_liveshot.so:system/vendor/lib/libchromatix_chiron_imx386_semco_liveshot.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_qtech_cpp_video.so:system/vendor/lib/libchromatix_chiron_ov5675_qtech_cpp_video.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_qtech_a3_default_video.so:system/vendor/lib/libchromatix_chiron_ov5675_qtech_a3_default_video.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_qtech_cpp_ds_chromatix.so:system/vendor/lib/libchromatix_chiron_ov5675_qtech_cpp_ds_chromatix.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_cpp_video.so:system/vendor/lib/libchromatix_chiron_imx386_semco_cpp_video.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_qtech_liveshot.so:system/vendor/lib/libchromatix_chiron_ov5675_qtech_liveshot.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_qtech_cpp_hfr_60.so:system/vendor/lib/libchromatix_chiron_ov5675_qtech_cpp_hfr_60.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_hfr_90_3a.so:system/vendor/lib/libchromatix_chiron_imx386_semco_hfr_90_3a.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_qtech_postproc.so:system/vendor/lib/libchromatix_chiron_ov5675_qtech_postproc.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_zsl_preview.so:system/vendor/lib/libchromatix_chiron_imx386_semco_zsl_preview.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_primax_cpp_snapshot.so:system/vendor/lib/libchromatix_chiron_ov5675_primax_cpp_snapshot.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_hfr_120_3a.so:system/vendor/lib/libchromatix_chiron_imx386_semco_hfr_120_3a.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_qtech_zsl_preview.so:system/vendor/lib/libchromatix_chiron_ov5675_qtech_zsl_preview.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_postproc.so:system/vendor/lib/libchromatix_chiron_imx386_semco_postproc.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_primax_postproc.so:system/vendor/lib/libchromatix_chiron_ov5675_primax_postproc.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_primax_a3_hfr_90.so:system/vendor/lib/libchromatix_chiron_ov5675_primax_a3_hfr_90.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_qtech_cpp_preview.so:system/vendor/lib/libchromatix_chiron_ov5675_qtech_cpp_preview.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_primax_cpp_ds_chromatix.so:system/vendor/lib/libchromatix_chiron_ov5675_primax_cpp_ds_chromatix.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_cpp_hfr_60.so:system/vendor/lib/libchromatix_chiron_imx386_semco_cpp_hfr_60.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_cpp_hfr_90.so:system/vendor/lib/libchromatix_chiron_imx386_semco_cpp_hfr_90.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_qtech_hfr_60.so:system/vendor/lib/libchromatix_chiron_ov5675_qtech_hfr_60.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_video_hdr.so:system/vendor/lib/libchromatix_chiron_imx386_semco_video_hdr.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_hfr_120.so:system/vendor/lib/libchromatix_chiron_imx386_semco_hfr_120.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_cpp_video_hdr.so:system/vendor/lib/libchromatix_chiron_imx386_semco_cpp_video_hdr.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_cpp_snapshot_hht.so:system/vendor/lib/libchromatix_chiron_imx386_semco_cpp_snapshot_hht.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_primax_hfr_60.so:system/vendor/lib/libchromatix_chiron_ov5675_primax_hfr_60.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_hdr_video_3a.so:system/vendor/lib/libchromatix_chiron_imx386_semco_hdr_video_3a.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_qtech_a3_hfr_120.so:system/vendor/lib/libchromatix_chiron_ov5675_qtech_a3_hfr_120.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_primax_cpp_video.so:system/vendor/lib/libchromatix_chiron_ov5675_primax_cpp_video.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_qtech_hfr_90.so:system/vendor/lib/libchromatix_chiron_ov5675_qtech_hfr_90.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libmmcamera_chiron_ov5675_qtech.so:system/vendor/lib/libmmcamera_chiron_ov5675_qtech.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libmmcamera_chiron_ov5675_primax_eeprom.so:system/vendor/lib/libmmcamera_chiron_ov5675_primax_eeprom.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_qtech_cpp_us_chromatix.so:system/vendor/lib/libchromatix_chiron_ov5675_qtech_cpp_us_chromatix.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_qtech_cpp_hfr_120.so:system/vendor/lib/libchromatix_chiron_ov5675_qtech_cpp_hfr_120.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_primax_cpp_us_chromatix.so:system/vendor/lib/libchromatix_chiron_ov5675_primax_cpp_us_chromatix.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libmmcamera_chiron_ov5675_primax.so:system/vendor/lib/libmmcamera_chiron_ov5675_primax.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_qtech_a3_hfr_90.so:system/vendor/lib/libchromatix_chiron_ov5675_qtech_a3_hfr_90.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_qtech_a3_hfr_60.so:system/vendor/lib/libchromatix_chiron_ov5675_qtech_a3_hfr_60.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_zsl_video.so:system/vendor/lib/libchromatix_chiron_imx386_semco_zsl_video.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_primax_cpp_hfr_90.so:system/vendor/lib/libchromatix_chiron_ov5675_primax_cpp_hfr_90.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_primax_a3_hfr_60.so:system/vendor/lib/libchromatix_chiron_ov5675_primax_a3_hfr_60.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_qtech_common.so:system/vendor/lib/libchromatix_chiron_ov5675_qtech_common.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_qtech_zsl_video.so:system/vendor/lib/libchromatix_chiron_ov5675_qtech_zsl_video.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_qtech_cpp_video_full.so:system/vendor/lib/libchromatix_chiron_ov5675_qtech_cpp_video_full.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_hfr_90.so:system/vendor/lib/libchromatix_chiron_imx386_semco_hfr_90.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_primax_hfr_120.so:system/vendor/lib/libchromatix_chiron_ov5675_primax_hfr_120.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_primax_cpp_hfr_60.so:system/vendor/lib/libchromatix_chiron_ov5675_primax_cpp_hfr_60.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_qtech_cpp_snapshot.so:system/vendor/lib/libchromatix_chiron_ov5675_qtech_cpp_snapshot.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_cpp_snapshot.so:system/vendor/lib/libchromatix_chiron_imx386_semco_cpp_snapshot.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_cpp_preview.so:system/vendor/lib/libchromatix_chiron_imx386_semco_cpp_preview.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libactuator_chiron_imx386_ak7372_semco.so:system/vendor/lib/libactuator_chiron_imx386_ak7372_semco.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_snapshot_hdr.so:system/vendor/lib/libchromatix_chiron_imx386_semco_snapshot_hdr.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_qtech_video_full.so:system/vendor/lib/libchromatix_chiron_ov5675_qtech_video_full.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_hfr_60.so:system/vendor/lib/libchromatix_chiron_imx386_semco_hfr_60.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_primax_cpp_video_full.so:system/vendor/lib/libchromatix_chiron_ov5675_primax_cpp_video_full.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_primax_a3_default_preview.so:system/vendor/lib/libchromatix_chiron_ov5675_primax_a3_default_preview.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_cpp_liveshot.so:system/vendor/lib/libchromatix_chiron_imx386_semco_cpp_liveshot.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_video.so:system/vendor/lib/libchromatix_chiron_imx386_semco_video.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_snapshot.so:system/vendor/lib/libchromatix_chiron_imx386_semco_snapshot.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_hdr_snapshot_3a.so:system/vendor/lib/libchromatix_chiron_imx386_semco_hdr_snapshot_3a.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libmmcamera_chiron_ov5675_qtech_eeprom.so:system/vendor/lib/libmmcamera_chiron_ov5675_qtech_eeprom.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_qtech_preview.so:system/vendor/lib/libchromatix_chiron_ov5675_qtech_preview.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_primax_hfr_90.so:system/vendor/lib/libchromatix_chiron_ov5675_primax_hfr_90.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_hfr_60_3a.so:system/vendor/lib/libchromatix_chiron_imx386_semco_hfr_60_3a.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_primax_cpp_liveshot.so:system/vendor/lib/libchromatix_chiron_ov5675_primax_cpp_liveshot.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_qtech_a3_default_preview.so:system/vendor/lib/libchromatix_chiron_ov5675_qtech_a3_default_preview.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_qtech_cpp_liveshot.so:system/vendor/lib/libchromatix_chiron_ov5675_qtech_cpp_liveshot.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_primax_liveshot.so:system/vendor/lib/libchromatix_chiron_ov5675_primax_liveshot.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libmmcamera_chiron_imx386_semco.so:system/vendor/lib/libmmcamera_chiron_imx386_semco.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_default_preview.so:system/vendor/lib/libchromatix_chiron_imx386_semco_default_preview.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_primax_default_video.so:system/vendor/lib/libchromatix_chiron_ov5675_primax_default_video.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_primax_preview.so:system/vendor/lib/libchromatix_chiron_ov5675_primax_preview.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_4K_video.so:system/vendor/lib/libchromatix_chiron_imx386_semco_4K_video.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_primax_cpp_preview.so:system/vendor/lib/libchromatix_chiron_ov5675_primax_cpp_preview.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_imx386_semco_default_video.so:system/vendor/lib/libchromatix_chiron_imx386_semco_default_video.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_qtech_snapshot.so:system/vendor/lib/libchromatix_chiron_ov5675_qtech_snapshot.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_primax_a3_hfr_120.so:system/vendor/lib/libchromatix_chiron_ov5675_primax_a3_hfr_120.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_chiron_ov5675_primax_zsl_preview.so:system/vendor/lib/libchromatix_chiron_ov5675_primax_zsl_preview.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libSonyIMX386PdafLibrary.so:system/vendor/lib/libSonyIMX386PdafLibrary.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_centaur_imx386_primax_4K_preview.so:system/vendor/lib/libchromatix_centaur_imx386_primax_4K_preview.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_centaur_imx386_primax_4K_video.so:system/vendor/lib/libchromatix_centaur_imx386_primax_4K_video.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_centaur_imx386_primax_common.so:system/vendor/lib/libchromatix_centaur_imx386_primax_common.so \
