@@ -53,6 +53,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chiron/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/xiaomi/chiron/proprietary/etc/permissions/radioconfig.xml:system/etc/permissions/radioconfig.xml \
     vendor/xiaomi/chiron/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
+    vendor/xiaomi/chiron/proprietary/etc/permissions/privapp-permissions-com.qualcomm.location.xml:system/etc/permissions/privapp-permissions-com.qualcomm.location.xml \
     vendor/xiaomi/chiron/proprietary/etc/qdcm_calib_data_jdi_fhd_video_dsi_panel.xml:system/etc/qdcm_calib_data_jdi_fhd_video_dsi_panel.xml \
     vendor/xiaomi/chiron/proprietary/etc/wfdconfig.xml:system/etc/wfdconfig.xml \
     vendor/xiaomi/chiron/proprietary/etc/wfdconfigsink.xml:system/etc/wfdconfigsink.xml \
@@ -61,14 +62,21 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chiron/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
     vendor/xiaomi/chiron/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
     vendor/xiaomi/chiron/proprietary/framework/com.qti.snapdragon.sdk.display.jar:system/framework/com.qti.snapdragon.sdk.display.jar \
+    vendor/xiaomi/chiron/proprietary/framework/com.qualcomm.qti.imscmservice@1.0-java.jar:system/framework/com.qualcomm.qti.imscmservice@1.0-java.jar \
     vendor/xiaomi/chiron/proprietary/framework/com.quicinc.cne.api-V1.0-java.jar:system/framework/com.quicinc.cne.api-V1.0-java.jar \
     vendor/xiaomi/chiron/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
     vendor/xiaomi/chiron/proprietary/framework/com.xiaomi.sensor.jar:system/framework/com.xiaomi.sensor.jar \
+    vendor/xiaomi/chiron/proprietary/framework/dpm.jar:system/framework/dpmapi.jar \
     vendor/xiaomi/chiron/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/xiaomi/chiron/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
     vendor/xiaomi/chiron/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
-    vendor/xiaomi/chiron/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
+    vendor/xiaomi/chiron/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
+    vendor/xiaomi/chiron/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
+    vendor/xiaomi/chiron/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
+    vendor/xiaomi/chiron/proprietary/framework/rcs_service_aidl.jar:system/framework/rcs_service_aidl.jar \
+    vendor/xiaomi/chiron/proprietary/framework/rcs_service_api.jar:system/framework/rcs_service_api.jar \
     vendor/xiaomi/chiron/proprietary/lib/com.qualcomm.qti.ant@1.0.so:system/lib/com.qualcomm.qti.ant@1.0.so \
+    vendor/xiaomi/chiron/proprietary/lib/com.qualcomm.qti.dpm.api@1.0.so:system/lib/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/xiaomi/chiron/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
     vendor/xiaomi/chiron/proprietary/lib/libFileMux.so:system/lib/libFileMux.so \
     vendor/xiaomi/chiron/proprietary/lib/libMiCameraHal.so:system/lib/libMiCameraHal.so \
@@ -81,6 +89,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chiron/proprietary/lib/libdpmtcm.so:system/lib/libdpmtcm.so \
     vendor/xiaomi/chiron/proprietary/lib/libhbtpjni.so:system/lib/libhbtpjni.so \
     vendor/xiaomi/chiron/proprietary/lib/lib-imsvideocodec.so:system/lib/lib-imsvideocodec.so \
+    vendor/xiaomi/chiron/proprietary/lib/lib-imsvtutils.so:system/lib/lib-imsvtutils.so \
+    vendor/xiaomi/chiron/proprietary/lib/lib-imsvtextutils.so:system/lib/lib-imsvtextutils.so \
     vendor/xiaomi/chiron/proprietary/lib/liblocationservice_jni.so:system/lib/liblocationservice_jni.so \
     vendor/xiaomi/chiron/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
     vendor/xiaomi/chiron/proprietary/lib/libmmparser_lite.so:system/lib/libmmparser_lite.so \
@@ -128,12 +138,15 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chiron/proprietary/lib/vendor.qti.hardware.qteeconnector@1.0.so:system/lib/vendor.qti.hardware.qteeconnector@1.0.so \
     vendor/xiaomi/chiron/proprietary/lib/vendor.qti.hardware.tui_comm@1.0.so:system/lib/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/xiaomi/chiron/proprietary/lib/vendor.qti.hardware.vpp@1.1.so:system/lib/vendor.qti.hardware.vpp@1.1.so \
+    vendor/xiaomi/chiron/proprietary/lib/vendor.qti.imsrtpservice@1.0.so:system/lib/vendor.qti.imsrtpservice@1.0.so \
     vendor/xiaomi/chiron/proprietary/lib64/com.qualcomm.qti.ant@1.0.so:system/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/xiaomi/chiron/proprietary/lib64/com.qualcomm.qti.dpm.api@1.0.so:system/lib64/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/xiaomi/chiron/proprietary/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so:system/lib64/com.qualcomm.qti.wifidisplayhal@1.0.so \
     vendor/xiaomi/chiron/proprietary/lib64/hw/consumerir.default.so:system/lib64/hw/consumerir.default.so \
     vendor/xiaomi/chiron/proprietary/lib64/lib-imscamera.so:system/lib64/lib-imscamera.so \
     vendor/xiaomi/chiron/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so \
+    vendor/xiaomi/chiron/proprietary/lib64/lib-imsvtextutils.so:system/lib64/lib-imsvtextutils.so \
+    vendor/xiaomi/chiron/proprietary/lib64/lib-imsvtutils.so:system/lib64/lib-imsvtutils.so \
     vendor/xiaomi/chiron/proprietary/lib64/libFileMux.so:system/lib64/libFileMux.so \
     vendor/xiaomi/chiron/proprietary/lib64/libantradio.so:system/lib64/libantradio.so \
     vendor/xiaomi/chiron/proprietary/lib64/libcalapi.so:system/lib64/libcalapi.so \
@@ -198,6 +211,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chiron/proprietary/vendor/bin/cnss-daemon:system/vendor/bin/cnss-daemon \
     vendor/xiaomi/chiron/proprietary/vendor/bin/cnss_diag:system/vendor/bin/cnss_diag \
     vendor/xiaomi/chiron/proprietary/vendor/bin/dpmQmiMgr:system/vendor/bin/dpmQmiMgr \
+    vendor/xiaomi/chiron/proprietary/vendor/bin/energy-awareness:system/vendor/bin/energy-awareness \
     vendor/xiaomi/chiron/proprietary/vendor/bin/fstman:system/vendor/bin/fstman \
     vendor/xiaomi/chiron/proprietary/vendor/bin/hbtp_daemon:system/vendor/bin/hbtp_daemon \
     vendor/xiaomi/chiron/proprietary/vendor/bin/hci_qcomm_init:system/vendor/bin/hci_qcomm_init \
@@ -216,6 +230,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chiron/proprietary/vendor/bin/ims_rtp_daemon:system/vendor/bin/ims_rtp_daemon \
     vendor/xiaomi/chiron/proprietary/vendor/bin/imsdatadaemon:system/vendor/bin/imsdatadaemon \
     vendor/xiaomi/chiron/proprietary/vendor/bin/imsqmidaemon:system/vendor/bin/imsqmidaemon \
+    vendor/xiaomi/chiron/proprietary/vendor/bin/imsrcsd:system/vendor/bin/imsrcsd \
     vendor/xiaomi/chiron/proprietary/vendor/bin/ipacm-diag:system/vendor/bin/ipacm-diag \
     vendor/xiaomi/chiron/proprietary/vendor/bin/irsc_util:system/vendor/bin/irsc_util \
     vendor/xiaomi/chiron/proprietary/vendor/bin/loc_launcher:system/vendor/bin/loc_launcher \
@@ -223,6 +238,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chiron/proprietary/vendor/bin/mm-pp-dpps:system/vendor/bin/mm-pp-dpps \
     vendor/xiaomi/chiron/proprietary/vendor/bin/msm_irqbalance:system/vendor/bin/msm_irqbalance \
     vendor/xiaomi/chiron/proprietary/vendor/bin/netmgrd:system/vendor/bin/netmgrd \
+    vendor/xiaomi/chiron/proprietary/vendor/bin/nqnfcinfo:system/vendor/bin/nqnfcinfo \
     vendor/xiaomi/chiron/proprietary/vendor/bin/pd-mapper:system/vendor/bin/pd-mapper \
     vendor/xiaomi/chiron/proprietary/vendor/bin/pm-proxy:system/vendor/bin/pm-proxy \
     vendor/xiaomi/chiron/proprietary/vendor/bin/pm-service:system/vendor/bin/pm-service \
@@ -337,10 +353,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chiron/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/egl/libQTapGLES.so:system/vendor/lib/egl/libQTapGLES.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/egl/libq3dtools_esx.so:system/vendor/lib/egl/libq3dtools_esx.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/hw/activity_recognition.msm8998.so:system/vendor/lib/hw/activity_recognition.msm8998.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:system/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/hw/camera.msm8998.so:system/vendor/lib/hw/camera.msm8998.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so:system/vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/hw/fingerprint.goodix.so:system/vendor/lib/hw/fingerprint.goodix.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/hw/gatekeeper.msm8998.so:system/vendor/lib/hw/gatekeeper.msm8998.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/hw/keystore.msm8998.so:system/vendor/lib/hw/keystore.msm8998.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/hw/sound_trigger.primary.msm8998.so:system/vendor/lib/hw/sound_trigger.primary.msm8998.so \
@@ -698,33 +716,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_s5k3m3_semco_video_4k.so:system/vendor/lib/libchromatix_s5k3m3_semco_video_4k.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_s5k3m3_semco_zsl_preview_ad5816g.so:system/vendor/lib/libchromatix_s5k3m3_semco_zsl_preview_ad5816g.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_s5k3m3_semco_zsl_video_ad5816g.so:system/vendor/lib/libchromatix_s5k3m3_semco_zsl_video_ad5816g.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_sagit_imx268_liteon_4k_preview_3a.so:system/vendor/lib/libchromatix_sagit_imx268_liteon_4k_preview_3a.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_sagit_imx268_liteon_4k_video_3a.so:system/vendor/lib/libchromatix_sagit_imx268_liteon_4k_video_3a.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_sagit_imx268_liteon_common.so:system/vendor/lib/libchromatix_sagit_imx268_liteon_common.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_sagit_imx268_liteon_cpp_hfr_120.so:system/vendor/lib/libchromatix_sagit_imx268_liteon_cpp_hfr_120.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_sagit_imx268_liteon_cpp_hfr_60.so:system/vendor/lib/libchromatix_sagit_imx268_liteon_cpp_hfr_60.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_sagit_imx268_liteon_cpp_hfr_90.so:system/vendor/lib/libchromatix_sagit_imx268_liteon_cpp_hfr_90.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_sagit_imx268_liteon_cpp_liveshot.so:system/vendor/lib/libchromatix_sagit_imx268_liteon_cpp_liveshot.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_sagit_imx268_liteon_cpp_preview.so:system/vendor/lib/libchromatix_sagit_imx268_liteon_cpp_preview.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_sagit_imx268_liteon_cpp_snapshot.so:system/vendor/lib/libchromatix_sagit_imx268_liteon_cpp_snapshot.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_sagit_imx268_liteon_cpp_video.so:system/vendor/lib/libchromatix_sagit_imx268_liteon_cpp_video.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_sagit_imx268_liteon_cpp_video_4k.so:system/vendor/lib/libchromatix_sagit_imx268_liteon_cpp_video_4k.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_sagit_imx268_liteon_default_preview_3a.so:system/vendor/lib/libchromatix_sagit_imx268_liteon_default_preview_3a.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_sagit_imx268_liteon_default_video.so:system/vendor/lib/libchromatix_sagit_imx268_liteon_default_video.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_sagit_imx268_liteon_default_video_3a.so:system/vendor/lib/libchromatix_sagit_imx268_liteon_default_video_3a.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_sagit_imx268_liteon_hfr_120.so:system/vendor/lib/libchromatix_sagit_imx268_liteon_hfr_120.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_sagit_imx268_liteon_hfr_120_3a.so:system/vendor/lib/libchromatix_sagit_imx268_liteon_hfr_120_3a.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_sagit_imx268_liteon_hfr_60.so:system/vendor/lib/libchromatix_sagit_imx268_liteon_hfr_60.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_sagit_imx268_liteon_hfr_60_3a.so:system/vendor/lib/libchromatix_sagit_imx268_liteon_hfr_60_3a.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_sagit_imx268_liteon_hfr_90.so:system/vendor/lib/libchromatix_sagit_imx268_liteon_hfr_90.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_sagit_imx268_liteon_hfr_90_3a.so:system/vendor/lib/libchromatix_sagit_imx268_liteon_hfr_90_3a.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_sagit_imx268_liteon_liveshot.so:system/vendor/lib/libchromatix_sagit_imx268_liteon_liveshot.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_sagit_imx268_liteon_postproc.so:system/vendor/lib/libchromatix_sagit_imx268_liteon_postproc.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_sagit_imx268_liteon_preview.so:system/vendor/lib/libchromatix_sagit_imx268_liteon_preview.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_sagit_imx268_liteon_snapshot.so:system/vendor/lib/libchromatix_sagit_imx268_liteon_snapshot.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_sagit_imx268_liteon_video_4k.so:system/vendor/lib/libchromatix_sagit_imx268_liteon_video_4k.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_sagit_imx268_liteon_zsl_preview_3a.so:system/vendor/lib/libchromatix_sagit_imx268_liteon_zsl_preview_3a.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libchromatix_sagit_imx268_liteon_zsl_video_3a.so:system/vendor/lib/libchromatix_sagit_imx268_liteon_zsl_video_3a.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
@@ -856,11 +847,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chiron/proprietary/vendor/lib/libmmcamera_s5k3m3_ofilm.so:system/vendor/lib/libmmcamera_s5k3m3_ofilm.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/libmmcamera_s5k3m3_semco.so:system/vendor/lib/libmmcamera_s5k3m3_semco.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/libmmcamera_sac_lib.so:system/vendor/lib/libmmcamera_sac_lib.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libmmcamera_sagit_imx268_liteon.so:system/vendor/lib/libmmcamera_sagit_imx268_liteon.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libmmcamera_sagit_imx268_liteon_eeprom.so:system/vendor/lib/libmmcamera_sagit_imx268_liteon_eeprom.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libmmcamera_sagit_imx268_primax_eeprom.so:system/vendor/lib/libmmcamera_sagit_imx268_primax_eeprom.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libmmcamera_sagit_imx386_semco_eeprom.so:system/vendor/lib/libmmcamera_sagit_imx386_semco_eeprom.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib/libmmcamera_sagit_s5k3m3_semco_eeprom.so:system/vendor/lib/libmmcamera_sagit_s5k3m3_semco_eeprom.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/libmmcamera_stillmore_lib.so:system/vendor/lib/libmmcamera_stillmore_lib.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/libmmcamera_sw2d_lib.so:system/vendor/lib/libmmcamera_sw2d_lib.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/libmmcamera_thread_services.so:system/vendor/lib/libmmcamera_thread_services.so \
@@ -1006,10 +992,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chiron/proprietary/vendor/lib64/hw/activity_recognition.msm8998.so:system/vendor/lib64/hw/activity_recognition.msm8998.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:system/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so:system/vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib64/hw/fingerprint.fpc.so:system/vendor/lib64/hw/fingerprint.fpc.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib64/hw/fingerprint.goodix.so:system/vendor/lib64/hw/fingerprint.goodix.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib64/hw/fingerprint.fpc.so:system/vendor/lib64/hw/fingerprint.fpc.msm8998.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib64/hw/fingerprint.goodix.so:system/vendor/lib64/hw/fingerprint.goodix.msm8998.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib64/hw/gatekeeper.msm8998.so:system/vendor/lib64/hw/gatekeeper.msm8998.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib64/hw/keystore.msm8998.so:system/vendor/lib64/hw/keystore.msm8998.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib64/hw/sound_trigger.primary.msm8998.so:system/vendor/lib64/hw/sound_trigger.primary.msm8998.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so:system/vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so:system/vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so:system/vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so \
