@@ -1223,3 +1223,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chiron/proprietary/vendor/lib64/lib-imscmservice.so:system/vendor/lib64/lib-imscmservice.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib64/lib-uceservice.so:system/vendor/lib64/lib-uceservice.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so.so:system/vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so
+
+# Use OP AptX and LDAC blobs
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/chiron/proprietary/vendor/lib64/libaptXHD_encoder.so:system/vendor/lib64/libaptXHD_encoder.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib64/libaptX_encoder.so:system/vendor/lib64/libaptX_encoder.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libaptXHD_encoder.so:system/vendor/lib/libaptXHD_encoder.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/libaptX_encoder.so:system/vendor/lib/libaptX_encoder.so \
+    vendor/xiaomi/chiron/proprietary/lib64/libldacBT_abr.so:system/lib64/libldacBT_abr.so \
+    vendor/xiaomi/chiron/proprietary/lib64/libldacBT_enc.so:system/lib64/libldacBT_enc.so
