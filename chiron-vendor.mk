@@ -1222,7 +1222,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chiron/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@1.0_vendor.so:system/vendor/lib/com.qualcomm.qti.imscmservice@1.0_vendor.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib64/lib-imscmservice.so:system/vendor/lib64/lib-imscmservice.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib64/lib-uceservice.so:system/vendor/lib64/lib-uceservice.so \
-    vendor/xiaomi/chiron/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so.so:system/vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so
+    vendor/xiaomi/chiron/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so:system/vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so
 
 # Use OP AptX and LDAC blobs
 PRODUCT_COPY_FILES += \
