@@ -358,6 +358,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chiron/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:system/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/hw/camera.msm8998.so:system/vendor/lib/hw/camera.msm8998.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so:system/vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib64/hw/fingerprint.fpc.so:system/vendor/lib64/hw/fingerprint.fpc.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/hw/fingerprint.goodix.so:system/vendor/lib/hw/fingerprint.goodix.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/hw/gatekeeper.msm8998.so:system/vendor/lib/hw/gatekeeper.msm8998.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/hw/keystore.msm8998.so:system/vendor/lib/hw/keystore.msm8998.so \
@@ -1214,3 +1215,10 @@ PRODUCT_PACKAGES += \
     colorservice \
     WfdCommon \
     qcrilhook
+
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/lib-imscmservice.so:system/vendor/lib/lib-imscmservice.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib/lib-uceservice.so:system/vendor/lib/lib-uceservice.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib64/lib-imscmservice.so:system/vendor/lib64/lib-imscmservice.so \
+    vendor/xiaomi/chiron/proprietary/vendor/lib64/lib-uceservice.so:system/vendor/lib64/lib-uceservice.so
+
