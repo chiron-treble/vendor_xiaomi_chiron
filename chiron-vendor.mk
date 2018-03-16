@@ -62,7 +62,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chiron/proprietary/vendor/framework/com.qti.dpmframework.jar:$(TARGET_COPY_OUT_VENDOR)/framework/com.qti.dpmframework.jar \
     vendor/xiaomi/chiron/proprietary/vendor/framework/com.qti.location.sdk.jar:$(TARGET_COPY_OUT_VENDOR)/framework/com.qti.location.sdk.jar \
     vendor/xiaomi/chiron/proprietary/vendor/framework/com.qti.snapdragon.sdk.display.jar:$(TARGET_COPY_OUT_VENDOR)/framework/com.qti.snapdragon.sdk.display.jar \
-    vendor/xiaomi/chiron/proprietary/vendor/framework/com.qualcomm.qti.imscmservice@1.0-java.jar:$(TARGET_COPY_OUT_VENDOR)/framework/com.qualcomm.qti.imscmservice@1.0-java.jar \
     vendor/xiaomi/chiron/proprietary/vendor/framework/com.quicinc.cne.api-V1.0-java.jar:$(TARGET_COPY_OUT_VENDOR)/framework/com.quicinc.cne.api-V1.0-java.jar \
     vendor/xiaomi/chiron/proprietary/vendor/framework/com.quicinc.cne.jar:$(TARGET_COPY_OUT_VENDOR)/framework/com.quicinc.cne.jar \
     vendor/xiaomi/chiron/proprietary/vendor/framework/com.xiaomi.sensor.jar:$(TARGET_COPY_OUT_VENDOR)/framework/com.xiaomi.sensor.jar \
@@ -73,8 +72,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chiron/proprietary/vendor/framework/izat.xt.srv.jar:$(TARGET_COPY_OUT_VENDOR)/framework/izat.xt.srv.jar \
     vendor/xiaomi/chiron/proprietary/vendor/framework/qcrilhook.jar:$(TARGET_COPY_OUT_VENDOR)/framework/qcrilhook.jar \
     vendor/xiaomi/chiron/proprietary/vendor/framework/qti-telephony-common.jar:$(TARGET_COPY_OUT_VENDOR)/framework/qti-telephony-common.jar \
-    vendor/xiaomi/chiron/proprietary/vendor/framework/rcs_service_aidl.jar:$(TARGET_COPY_OUT_VENDOR)/framework/rcs_service_aidl.jar \
-    vendor/xiaomi/chiron/proprietary/vendor/framework/rcs_service_api.jar:$(TARGET_COPY_OUT_VENDOR)/framework/rcs_service_api.jar \
     vendor/xiaomi/chiron/proprietary/vendor/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/xiaomi/chiron/proprietary/vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
