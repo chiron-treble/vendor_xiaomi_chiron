@@ -212,6 +212,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chiron/proprietary/vendor/bin/hbtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/hbtp_daemon \
     vendor/xiaomi/chiron/proprietary/vendor/bin/hci_qcomm_init:$(TARGET_COPY_OUT_VENDOR)/bin/hci_qcomm_init \
     vendor/xiaomi/chiron/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_VENDOR)/bin/hvdcp_opti \
+    vendor/xiaomi/chiron/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service-qti \
     vendor/xiaomi/chiron/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
     vendor/xiaomi/chiron/proprietary/vendor/bin/hw/vendor.qti.esepowermanager@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.esepowermanager@1.0-service \
     vendor/xiaomi/chiron/proprietary/vendor/bin/hw/vendor.qti.gnss@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.gnss@1.0-service \
@@ -1186,24 +1187,24 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/chiron/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db
 
 PRODUCT_PACKAGES += \
-    libbtnv \
     libgpustats \
+    libloc_api_v02 \
     libthermalclient \
     libtime_genoff \
-    libloc_api_v02 \
+    CNEService \
     QtiTelephonyService \
-    WfdService \
+    TimeService \
+    colorservice \
+    com.qualcomm.location \
     datastatusnotification \
+    dpmserviceapp \
     embms \
     ims \
     imssettings \
-    radioconfig \
-    CNEService \
     qcrilmsgtunnel \
-    TimeService \
-    colorservice \
-    WfdCommon \
-    qcrilhook
+    radioconfig \
+    qcrilhook \
+    vendor.qti.hardware.alarm-V1.0-java
 
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/chiron/proprietary/vendor/lib/lib-imscmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imscmservice.so \
